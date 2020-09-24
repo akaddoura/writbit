@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>900</height>
+    <height>920</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -494,7 +494,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Ctrl + N</string>
+          <string>Ctrl + H</string>
          </property>
         </widget>
        </item>
@@ -515,7 +515,7 @@
          <property name="font">
           <font>
            <family>Calibri</family>
-           <pointsize>8</pointsize>
+           <pointsize>9</pointsize>
           </font>
          </property>
          <property name="text">
