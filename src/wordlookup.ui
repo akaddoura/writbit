@@ -16,78 +16,6 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="subSearchBar1">
-       <property name="font">
-        <font>
-         <family>Courier New</family>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: rgb(90,90,90); color: white;
-</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="subSearchBar2">
-       <property name="font">
-        <font>
-         <family>Courier New</family>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: rgb(90,90,90); color: white;
-</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="subSearchBar3">
-       <property name="font">
-        <font>
-         <family>Courier New</family>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: rgb(90,90,90); color: white;
-</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QComboBox" name="optionBox3">
-       <property name="font">
-        <font>
-         <family>Courier New</family>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background: rgb(90,90,90); color: white;
-</string>
-       </property>
-       <item>
-        <property name="text">
-         <string>Means Like</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Part of</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Antonyms</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Topics</string>
-        </property>
-       </item>
-      </widget>
-     </item>
      <item row="0" column="0">
       <widget class="QComboBox" name="optionBox1">
        <property name="font">
@@ -120,8 +48,8 @@
        </item>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QComboBox" name="optionBox2">
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="subSearchBar1">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -131,26 +59,6 @@
         <string notr="true">background: rgb(90,90,90); color: white;
 </string>
        </property>
-       <item>
-        <property name="text">
-         <string>Means Like</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Part of</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Antonyms</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Topics</string>
-        </property>
-       </item>
       </widget>
      </item>
     </layout>
@@ -213,38 +121,6 @@
     <hint type="destinationlabel">
      <x>850</x>
      <y>114</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>subSearchBar2</sender>
-   <signal>returnPressed()</signal>
-   <receiver>searchButton</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>795</x>
-     <y>50</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>804</x>
-     <y>114</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>subSearchBar3</sender>
-   <signal>returnPressed()</signal>
-   <receiver>searchButton</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>752</x>
-     <y>77</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>760</x>
-     <y>109</y>
     </hint>
    </hints>
   </connection>

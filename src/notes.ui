@@ -466,6 +466,12 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Test Whats this&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
   <layout class="QGridLayout" name="dialogLayout" rowstretch="0,1,0" columnstretch="1,2,0,0">
    <property name="sizeConstraint">
     <enum>QLayout::SetMinimumSize</enum>
@@ -485,7 +491,7 @@
       <enum>Qt::Horizontal</enum>
      </property>
      <property name="standardButtons">
-      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
      </property>
      <property name="centerButtons">
       <bool>false</bool>
@@ -652,7 +658,7 @@
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Save all notes in the database. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="text">
-        <string>Update Database</string>
+        <string>Save Database</string>
        </property>
       </widget>
      </item>
@@ -738,8 +744,8 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1044</x>
-     <y>508</y>
+     <x>1168</x>
+     <y>799</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>

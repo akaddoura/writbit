@@ -1,3 +1,19 @@
+/***********************************************************************
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * See http://www.gnu.org/licenses/ for a look at the GNU general public
+ * license.
+ ***********************************************************************/
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
@@ -366,7 +382,9 @@ void MainWindow::openNotesDbConn(QSqlDatabase &db, QString &dir)
             if (ok)
                 createDbTables(db);
             else
+            {
                 throw 10;
+            }
         }
         else if (!checkDbTables(db))
         {
@@ -915,6 +933,7 @@ void MainWindow::changeBackgroundColor(const QColor c)
     p.setColor(QPalette::Text, currentTextColor);
     //ui->textEdit->setPalette(p);
     this->setPalette(p);
+    ui->textEdit->setPalette(p);
     this->repaint();
 }
 

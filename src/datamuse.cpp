@@ -1,3 +1,19 @@
+/***********************************************************************
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * See http://www.gnu.org/licenses/ for a look at the GNU general public
+ * license.
+ ***********************************************************************/
+
 #include "datamuse.h"
 
 Datamuse::Datamuse(QString w)
@@ -51,7 +67,7 @@ Datamuse::Datamuse(QString w)
     }
 }
 
-Datamuse::Datamuse(int index1, int index2, int index3, QString w1, QString w2, QString w3)
+Datamuse::Datamuse(int index1, QString w1)
 {
     net = new QNetworkAccessManager;
     QUrl url;
@@ -65,17 +81,17 @@ Datamuse::Datamuse(int index1, int index2, int index3, QString w1, QString w2, Q
         query.addQueryItem(param, w1);
     }
 
-    if (!w2.isEmpty())
-    {
-        QString param = setSearchParam(index2);
-        query.addQueryItem(param, w2);
-    }
+//    if (!w2.isEmpty())
+//    {
+//        QString param = setSearchParam(index2);
+//        query.addQueryItem(param, w2);
+//    }
 
-    if (!w3.isEmpty())
-    {
-        QString param = setSearchParam(index3);
-        query.addQueryItem(param, w3);
-    }
+//    if (!w3.isEmpty())
+//    {
+//        QString param = setSearchParam(index3);
+//        query.addQueryItem(param, w3);
+//    }
 
     url.setQuery(query);
 

@@ -266,7 +266,7 @@
        <property name="maximumSize">
         <size>
          <width>16777215</width>
-         <height>70</height>
+         <height>200</height>
         </size>
        </property>
        <property name="font">
@@ -275,7 +275,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Notes are stored in a locally saved SQLite database. You can tag notes to provide an easy way to search for specific notes in the database. A side panel on the main screen can also be used to create new notes or you can send a copy of a note from the Notes window to the side panel for reference while writing. </string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Open the notes window using Ctrl + H. You can create new notes using the '+' button. Notes can be selected to be deleted which turns them to a lighter color. Remember to save your notes by clicking the save button on the note or save all notes using the save database button. &lt;/p&gt;&lt;p&gt;Notes are stored in a locally saved SQLite database. You can tag notes to provide an easy way to search for specific notes in the database. A side panel on the main screen can also be used to create new notes or you can send a copy of a note from the Notes window to the side panel for reference while writing.&lt;/p&gt;&lt;p&gt;Please know that this feature is still under testing so some bugs are expected. Try using the refresh button or loading your database again to fix any problems. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -429,7 +429,7 @@
         </font>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You could install the openSSL libraries on your own if you know how. Otherwise, there are pre-compiled installers online that provide a very simple installation process such as the ones available on slproweb.com. Installation the &amp;quot;Light&amp;quot; version is more than enough. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You could install the openSSL libraries on your own if you know how. Otherwise, there are pre-compiled installers online that provide a very simple installation process such as the ones available on slproweb.com. Installating the &amp;quot;Light&amp;quot; version is more than enough. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>

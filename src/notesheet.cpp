@@ -1,3 +1,19 @@
+/***********************************************************************
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * See http://www.gnu.org/licenses/ for a look at the GNU general public
+ * license.
+ ***********************************************************************/
+
 #include "notesheet.h"
 #include "ui_notesheet.h"
 #include <QtGui/qpainter.h>
@@ -45,7 +61,7 @@ NoteSheet::NoteSheet(const int32_t& noteID, const QString& title, const QString&
 
     lastTagID = 1;
     getLastTagID();
-    ui->noteIDUI->setNum(noteID);
+    //ui->noteIDUI->setNum(noteID);
     ui->noteTitleUI->setText(title);
     ui->noteContentUI->setText(text);
     ui->noteTagsUI->addItems(noteTags);

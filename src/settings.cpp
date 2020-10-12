@@ -1,3 +1,19 @@
+/***********************************************************************
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * See http://www.gnu.org/licenses/ for a look at the GNU general public
+ * license.
+ ***********************************************************************/
+
 #include "settings.h"
 
 
@@ -103,13 +119,13 @@ void Settings::reload()
 
 void Settings::on_bgColor_clicked()
 {
-    bgColor = QColorDialog::getColor(QColor(35,35,35), this).rgb();
-    QColor c;
-    c.setRgb(bgColor);
+    QColor c = QColorDialog::getColor(QColor(35,35,35), this).rgb();
+    if (!c.isValid())
+        return;
+    else
+        emit changeBackgroundColor(c);
 //    p.setColor(QPalette::Base, c);
 //    p.setColor(QPalette::Window, c);
-//    //p.setColor(QPalette::Button, bg_color);
-    emit changeBackgroundColor(c);
 
     QString cs;
     QTextStream(&cs) << c.red() << "," << c.green() << "," << c.blue();
