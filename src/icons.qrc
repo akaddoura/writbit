@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/save.png</file>
+        <file>icons/plus.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/refresh.png</file>
+        <file>icons/refreshWhite.png</file>
+        <file>icons/addWhite.png</file>
+        <file>icons/deleteWhite.png</file>
+        <file>icons/plusWhite.png</file>
+        <file>icons/saveWhite.png</file>
+        <file>icons/rightWhite.png</file>
+    </qresource>
+</RCC>
